@@ -14,7 +14,7 @@ $$
 \end{equation}
 $$
 
-<em>Objective.</em> Plot and calculate the numerical derivatives of a function $f(x)$ using different methods, such as Eq. (1). Compare numerical derivatives to the analytic derivative. Determine the smallest step $\delta$ that is still within the precision of a float.
+<em>Objective.</em> Plot and calculate the numerical derivatives of a function $f(x)$ using different methods, such as the above equation. Compare numerical derivatives to the analytic derivative. Determine the smallest step $\delta$ that is still within the precision of a float.
 
 ## <em>Assignment 2</em>
 
@@ -74,7 +74,7 @@ The solid angle is essentially the "area" that an object takes up within the sph
 </div>
 <br />
 
-<em>Objective.</em> For a cylinder that is displaced from the origin in three-space, find the integration limits of $\theta$ and $\phi$ to be used in Eq. (5). Find the solid angle that this cylinder takes up using Eq. (5).
+<em>Objective.</em> For a cylinder that is displaced from the origin in three-space, find the integration limits of $\theta$ and $\phi$ to be used in the solid angle equation. Find the solid angle that this cylinder takes up using that equation.
 
 ## <em>Assignment 4</em>
 
@@ -108,7 +108,7 @@ $$
 \end{equation}
 $$
 
-where $\epsilon_0$ is a constant and $e$ is the elementary charge. After inserting this potential into Eq. (6), the wavefunction for the electron can be solved for. The solutions give rise to three constants $n$, $l$, and $\lambda$ (or $m$), which can be varied to describe all the different electron orbitals of the hydrogen atom. Some of these orbitals are shown below.
+where $\epsilon_0$ is a constant and $e$ is the elementary charge. After inserting this potential into the Schrodinger equation, the wavefunction for the electron can be solved for. The solutions give rise to three constants $n$, $l$, and $\lambda$ (or $m$), which can be varied to describe all the different electron orbitals of the hydrogen atom. Some of these orbitals are shown below.
 
 <div style="text-align: center">
     <img src="media/orbitals.png" style="width: 75%" />
@@ -178,11 +178,9 @@ A particle in the harmonic oscillator problem has a potential $V(x)=m\omega^2x^2
 
 Likewise, the infinite square well problem of width $a$ has a potential defined by
 
-$$
-\begin{equation}
-    V(x)=\begin{cases}0, & 0<x<a \\ \infty, & \text{otherwise}\end{cases}.
-\end{equation}
-$$
+<div style="text-align: center">
+    <img src="media/eq2.png" style="width: 25%" />
+</div>
 
 The potential is shown below.
 
@@ -194,6 +192,7 @@ The potential is shown below.
 <em>Objective. </em> Construct a potential by placing a harmonic oscillator inside of an infinite square well. Solve the Schrodinger equation in the basis of infinite square well eigenfunctions. Plot the resulting wavefunction against the wavefunction for a particle in the harmonic oscillator to see how much the square well affects the wavefunction.
 
 <br />
+<br />
 <em>Note: I skipped over many details in the explanation here for the sake of brevity. The original paper by Dr. Frank Marsiglio in the corresponding folder can be read for further details.</em>
 <br />
 <br />
@@ -204,19 +203,15 @@ The potential is shown below.
 
 The Dirac delta function is (lazily) defined as
 
-$$
-\begin{equation}
-    \delta(x-x_0)=\begin{cases}0, & x\ne x_0 \\ \infty, & x=x_0\end{cases}.
-\end{equation}
-$$
+<div style="text-align: center">
+    <img src="media/eq0.png" style="width: 25%" />
+</div>
 
 The Dirac delta function satisfies the integral property
 
-$$
-\begin{equation}
-    \int_a^b f(x)\delta(x-x_0)\ dx=\begin{cases} f(x_0), & a<x_0<b \\ 0, & \text{otherwise}\end{cases}.
-\end{equation}
-$$
+<div style="text-align: center">
+    <img src="media/eq1.png" style="width: 40%" />
+</div>
 
 The graph of the Dirac delta function looks like:
 
@@ -258,14 +253,12 @@ $$
 \end{aligned}
 $$
  
-Invoking Eq. (15),
+Invoking the integral property,
 
-$$
-\begin{equation}
-    \int_a^b f(x)\frac{d\ }{dx}\delta(x-x_0)\ dx=\begin{cases}-\left.\frac{df}{dx}\right|_{x=x_0}, & a<x_0<b \\ 0, & \text{otherwise}\end{cases}.
-\end{equation}
-$$
+<div style="text-align: center">
+    <img src="media/eq3.png" style="width: 50%" />
+</div>
 
 Therefore, for any function $f(x)$, numerically integrating the function multiplied by a Gaussian with a narrow width centered about $x_0$ will yield the derivative of $f(x)$ at $x=x_0$.
 
-<em>Objective. </em> Calculate the derivative of $f(x)=\sin(x)$ by numerically integrating Eq. (18).
+<em>Objective. </em> Calculate the derivative of $f(x)=\sin(x)$ by numerically integrating the above equation.
