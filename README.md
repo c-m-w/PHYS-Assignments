@@ -179,7 +179,7 @@ A particle in the harmonic oscillator problem has a potential $V(x)=m\omega^2x^2
 Likewise, the infinite square well problem of width $a$ has a potential defined by
 
 <div style="text-align: center">
-    <img src="media/eq2.png" style="width: 25%" />
+    <img src="media/eq2.png" style="width: 35%" />
 </div>
 
 The potential is shown below.
@@ -204,13 +204,13 @@ The potential is shown below.
 The Dirac delta function is (lazily) defined as
 
 <div style="text-align: center">
-    <img src="media/eq0.png" style="width: 25%" />
+    <img src="media/eq0.png" style="width: 30%" />
 </div>
 
 The Dirac delta function satisfies the integral property
 
 <div style="text-align: center">
-    <img src="media/eq1.png" style="width: 40%" />
+    <img src="media/eq1.png" style="width: 50%" />
 </div>
 
 The graph of the Dirac delta function looks like:
@@ -256,7 +256,7 @@ $$
 Invoking the integral property,
 
 <div style="text-align: center">
-    <img src="media/eq3.png" style="width: 50%" />
+    <img src="media/eq3.png" style="width: 60%" />
 </div>
 
 Therefore, for any function $f(x)$, numerically integrating the function multiplied by a Gaussian with a narrow width centered about $x_0$ will yield the derivative of $f(x)$ at $x=x_0$.
