@@ -19,9 +19,10 @@ $$
 ## <em>Assignment 2</em>
 
 The Biot-Savart law describes the magnetic field $\vec B$ produced by an electric current $I$ along a curve $\mathcal C$:
+
 $$
 \begin{equation}
-    \vec B(\vec r)=\frac{\mu_0}{4\pi}\int_\mathcal C\frac{I d\vec l\times(\vec r-\vec r')}{|\vec r-\vec r'|^3},
+    \vec B(\vec r)=\frac{\mu_0}{4\pi}\int_\mathcal C\frac{I\ d\vec l\times(\vec r-\vec r')}{|\vec r-\vec r'|^3},
 \end{equation}
 $$
 
